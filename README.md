@@ -1,18 +1,3 @@
-# 🤖 Deriv AI Trading Bot
-
-Sistema de trading automatizado com Inteligência Artificial para a plataforma Deriv, desenvolvido em Python com machine learning, análise técnica e gerenciamento de risco avançado.
-
-## 🚀 Características Principais
-
-- **🧠 Inteligência Artificial**: Modelo LightGBM para previsão de direção de preços
-- **📊 Análise Técnica**: Indicadores técnicos (RSI, MACD, Bollinger Bands, etc.)
-- **⚡ Trading em Tempo Real**: Execução automática via WebSocket API
-- **🛡️ Gerenciamento de Risco**: Stop loss, stop gain, martingale opcional
-- **📈 Dashboard Interativo**: Interface web com Streamlit
-- **🧪 Backtesting**: Validação de estratégias com dados históricos
-- **📝 Logging Completo**: Registro detalhado de todas as operações
-
-## 📁 Estrutura do Projeto
 
 ```
 deriv/
@@ -30,7 +15,7 @@ deriv/
 └── README.md           # Documentação
 ```
 
-## 🔧 Instalação
+##  Instalação
 
 ### 1. Clone o repositório
 ```bash
@@ -57,7 +42,7 @@ cp .env.example .env
 # Edite o arquivo .env com suas credenciais da API Deriv
 ```
 
-## 🌐 Deploy no Streamlit Community Cloud
+## Deploy no Streamlit Community Cloud
 
 ### Pré-requisitos
 1. Conta no [GitHub](https://github.com)
@@ -109,7 +94,7 @@ MAX_DAILY_LOSS=50.0
 ENVIRONMENT=demo
 ```
 
-## 🎯 Como Usar
+##  Como Usar
 
 ### Verificar Status do Sistema
 ```bash
@@ -141,19 +126,15 @@ python main.py --mode trade
 python main.py --mode dashboard
 ```
 
-## 📊 Dashboard
+##  Dashboard
 
 O dashboard oferece:
 
-- **📈 Overview**: Métricas principais e gráficos de performance
-- **💹 Trading**: Controles em tempo real e status de risco
-- **📊 Performance**: Análise detalhada de resultados
-- **🧪 Backtest**: Interface para testes de estratégias
-- **⚙️ Configurações**: Ajustes do sistema
+- 
 
 Acesse em: `http://localhost:8501`
 
-## 🧠 Modelo de Machine Learning
+##  Modelo de Machine Learning
 
 ### Features Utilizadas
 - **Preço**: Open, High, Low, Close, variações
@@ -169,7 +150,7 @@ Acesse em: `http://localhost:8501`
 - **Validação Cruzada**: Time series split
 - **Métricas**: Acurácia, precisão, recall, F1-score
 
-## 🛡️ Gerenciamento de Risco
+##  Gerenciamento de Risco
 
 ### Controles Implementados
 - **Stake Fixo**: Valor fixo por trade
@@ -189,7 +170,7 @@ ENABLE_MARTINGALE = True     # Martingale ativo
 MARTINGALE_MULTIPLIER = 2.0  # 2x após perda
 ```
 
-## 📈 Estratégia de Trading
+##  Estratégia de Trading
 
 ### Sinais de Entrada
 1. **Previsão do Modelo**: Probabilidade > threshold
@@ -209,7 +190,7 @@ MARTINGALE_MULTIPLIER = 2.0  # 2x após perda
 5. Execução do trade
 6. Monitoramento do resultado
 
-## 🧪 Backtesting
+##  Backtesting
 
 ### Funcionalidades
 - **Simulação Histórica**: Teste com dados passados
@@ -231,7 +212,7 @@ print(f"Total PnL: ${results.total_pnl:.2f}")
 print(f"Win Rate: {results.win_rate:.2%}")
 ```
 
-## 📝 Logging e Monitoramento
+## ogging e Monitoramento
 
 ### Logs Disponíveis
 - **Trading**: Todas as operações executadas
@@ -248,7 +229,7 @@ logs/
 └── performance/        # Métricas de performance
 ```
 
-## ⚙️ Configurações Avançadas
+##  Configurações Avançadas
 
 ### Arquivo config.py
 ```python
@@ -282,7 +263,7 @@ LOG_LEVEL=INFO
 ENVIRONMENT=demo
 ```
 
-## 🔒 Segurança
+##  Segurança
 
 ### Boas Práticas
 - **Nunca** commite credenciais no código
@@ -296,9 +277,8 @@ ENVIRONMENT=demo
 - Use tokens com **escopo limitado**
 - **Revogue** tokens não utilizados
 
-## 🚨 Avisos Importantes
-
-⚠️ **ATENÇÃO**: Trading automatizado envolve riscos financeiros significativos.
+##  Avisos Importantes
+ **ATENÇÃO**: Trading automatizado envolve riscos financeiros significativos.
 
 - **Teste sempre** em conta demo primeiro
 - **Nunca** invista mais do que pode perder
@@ -306,7 +286,7 @@ ENVIRONMENT=demo
 - **Entenda** completamente a estratégia
 - **Mantenha** controles de risco rigorosos
 
-## 🛠️ Desenvolvimento
+##  Desenvolvimento
 
 ### Estrutura de Classes Principais
 
@@ -349,7 +329,7 @@ await collector.subscribe_ticks("R_50")
 - **Robustez**: Tratamento de falhas
 - **Explainability**: SHAP para interpretação
 
-## 📞 Suporte
+## Suporte
 
 ### Documentação Adicional
 - [API Deriv](https://developers.deriv.com/)
@@ -376,5 +356,3 @@ python main.py --mode trade
 Este projeto é fornecido "como está" para fins educacionais. Use por sua própria conta e risco.
 
 ---
-
-**Desenvolvido com ❤️ para a comunidade de trading algorítmico**
